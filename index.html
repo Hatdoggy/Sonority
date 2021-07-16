@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sonarity</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<script type="text/javascript" src="./app.js" defer></script>
+</head>
+<body class="flx flx-col bg txt-wht txt-w ovr-hide ovr-scr-y pos-rel">
+
+	<div class="flx flx-col flx-jc-ce flx-ai-ce w-100 txt-drk h-100 bg-wht none pos-fix z-top fade-t ovr-hide" id="mob-nav">
+		<i class="far fa-times-circle fs-s pos-abs custPos" id="exit"></i>
+		<div class="flx flx-col flx-jc-ce flx-ai-ce h-100 w-100">
+			<p class="cur op"><img src="./components/user.png" class="user"></p>		
+			<p class="cur op m-r-2 trans-1 pos-rel ">DASHBOARD</p>
+			<p class="cur op m-r-2 trans-1 pos-rel">MY TRACKS</p>
+			<p class="cur op m-r-2 trans-1 pos-rel">INTEGRATIONS</p>
+			<p class="cur op m-r-2 trans-1 pos-rel">HELP</p>	
+		</div>
+	</div>
+
+	<nav class="flx flx-ai-ce bg-drk p-10 p-r p-l fade-t">
+		<img src="./components/logo.png" class="logo">
+		<ul class="flx flx-jc-end flx-ai-ce op w-100">
+			<li class="cur m-r-2 trans-1 pos-rel active">DASHBOARD</li>
+			<li class="cur m-r-2 trans-1 pos-rel flx-shr">MY TRACKS</li>
+			<li class="cur m-r-2 trans-1 pos-rel">INTEGRATIONS</li>
+			<li class="cur m-r-2 trans-1 pos-rel">HELP</li>	
+			<li class="cur m-l-5"><img src="./components/user.png" class="user"></li>
+		</ul>
+		<i class="fas fa-bars m-l-auto" id="burger"></i>
+	</nav>
+	<main class="">	
+
+		<!-- Top Content -->
+
+		<section class="flx flx-jc-ce flx-ai-ce bg-img h-vh pos-rel">
+			<div class="flx flx-col w-50 h-100 p-20 flx-jc-ce fade-5">
+				<h1 class="nun-s w-100">WELCOME <span class="nun-xb grad">TO SONORITY</span></h1>
+				<p class="nun-s m-t-2 txt-al-j">Sonority turns your text into high-quality,human-sounding voiceover, gives you 1000s unique audio tracks, and converts your audio content into fully-customizable videos-all on complete autopilot.</p>
+				<a href="" class="cur btn-grd nun-b w-30 m-t-2 "><i class="fas fa-play m-r-5"></i>Demo Video</a>
+			</div>
+			<div class="w-50 p-20 h-100 flx flx-col flx-ai-end flx-jc-ce fade-r" id="btn-cont">
+				<div class="cur trans-05 flx p-20 flx-ai-ce btn-vio w-50 m-t-2">
+					<img src="./components/mic.png">
+					<p class="nun-reg m-l-5 m-r-auto">Voice Track</p>
+					<img src="./components/arw-r.png">
+				</div>
+				<div class="cur trans-05 flx p-20 flx-ai-ce btn-vio w-50 m-t-2">
+					<img src="./components/disc.png">
+					<p class="nun-reg m-l-5 m-r-auto">Music Track</p>
+					<img src="./components/arw-r.png">
+				</div>
+				<div class="cur trans-05 flx p-20 flx-ai-ce btn-vio w-50 m-t-2">
+					<img src="./components/play.png">
+					<p class="nun-reg m-l-5 m-r-auto">Audio Track</p>
+					<img src="./components/arw-r.png">
+				</div>
+				<div class="cur trans-05 flx p-20 flx-ai-ce btn-vio w-50 m-t-2">
+					<img src="./components/vol.png">
+					<p class="nun-reg m-l-5 m-r-auto">WaveVideo</p>
+					<img src="./components/arw-r.png">
+				</div>
+			</div>
+		</section>
+
+		<!-- Track List -->
+
+		<section class="flx flx-jc-ce flx-ai-ce h-vh pos-rel" id="tracks">
+			<div class="flx flx-col w-100 h-100 p-20 flx-jc-ce trck-cnt">
+				<header class="flx flx-jc-ce flx-ai-ce fade-5">
+					<h2 class="nun-b">My <span class="txt-vio">Tracks</span></h2>
+					<div class="flx flx-jc-ce flx-ai-ce cur m-l-auto arw">
+						<p class="nun-xb m-r-15 flx-shr">View all</p>
+						<i class="far fa-arrow-alt-circle-right txt-vio"></i>
+					</div>
+				</header>
+
+				<div class="w-100 flx flx-jc-sp flx-ai-ce m-t-2" id="trckList">
+
+					<span class="opa none trans-05 cur br-10 flx flx-ai-end pos-rel bg-1 cust m-r-2">
+						<p class="trck-head op bg-vio pos-abs">Voice Track</p>
+						<div class="desc z-main bg-op flx w-100 p-5 flx-ai-ce">
+							<i class="far fa-play-circle"></i>
+							<div class="flx flx-col m-l-5">
+								<p class="nun-s">April 28,2021 5:41:7</p>
+								<h4 class="nun-xb">Track 001</h4>
+							</div>
+						</div>
+					</span>
+
+					<span class="opa left none trans-05 cur br-10 flx flx-ai-end pos-rel bg-2 cust m-r-2">
+						<p class="trck-head op bg-blue pos-abs">Music Track</p>
+						<div class="desc z-main bg-blue flx w-100 p-5 flx-ai-ce">
+							<i class="far fa-play-circle"></i>
+							<div class="flx flx-col m-l-5">
+								<p class="nun-s">April 28,2021 5:41:7</p>
+								<h4 class="nun-xb">Track 002</h4>
+							</div>
+						</div>
+					</span>
+
+					<span class="opa none trans-05 cur br-10 flx flx-ai-end pos-rel bg-3 cust m-r-2">
+						<p class="trck-head op bg-drkVio pos-abs">Audio Track</p>
+						<div class="desc z-main bg-vio flx w-100 p-5 flx-ai-ce">
+							<i class="far fa-play-circle"></i>
+							<div class="flx flx-col m-l-5">
+								<p class="nun-s">April 28,2021 5:41:7</p>
+								<h4 class="nun-xb">Track 002</h4>
+							</div>
+						</div>
+					</span>
+
+					<span class="opa left none trans-05 cur br-10 flx flx-ai-end pos-rel bg-4 cust">
+						<p class="trck-head op bg-blGr pos-abs">WaveVideo</p>
+						<div class="desc z-main bg-blGr flx w-100 p-5 flx-ai-ce">
+							<i class="far fa-play-circle"></i>
+							<div class="flx flx-col m-l-5">
+								<p class="nun-s">April 28,2021 5:41:7</p>
+								<h4 class="nun-xb">Track 003</h4>
+							</div>
+						</div>
+					</span>
+
+				</div>
+			</div>			
+		</section>
+
+		<!-- Desc 1 -->
+
+		<section class="flx flx-jc-ce flx-ai-ce h-vh pos-rel" id="desc1">
+			<div class="flx flx-col w-50 h-100 flx-jc-ce fade-5">
+				<h4 class="nun-reg txt-vio">SAY GOODBYE TO FAKE-SOUNDING AI VOICEOVERS</h4>
+				<h2 class="nun-b">Turn your text into a natural & authentic voiceover</h2>
+				<p class="nun-xs m-t-2 txt-al-j w-80">Forget about spending time and money just to get a voiceover that captivates your viewers. Simply choose from 15 diverse voices and let our cutting-edge AI convert your text into a human-sounding voiceover in under 60 seconds.</p>
+			</div>
+			<div class="w-50 h-100 img-cont">
+				<img src="./components/img-1.png" pos-abs class="none pos-abs image-r">
+			</div>
+		</section>
+
+		<!-- Desc 2 -->
+
+		<section class="flx flx-jc-ce flx-ai-ce h-vh pos-rel" id="desc2">
+			<div class="w-50 h-100 img-cont">
+				<img src="./components/img-2.png" class="none pos-abs image-l">
+			</div>
+			<div class="flx flx-col w-50 h-100 flx-jc-ce fade-5">
+				<h4 class="nun-b txt-vio w-80">GET 1000S OF MUSIC TO CHOOSE FROM</h4>
+				<h2 class="nun-b">Stand out with unique music for your content</h2>
+				<p class="nun-xs m-t-2 txt-al-j w-80">Level up from generic music that everybody else is using to unique AI-generated tracks that elevate your content from the rest. Set the perfect mood with unlimited access to a rich library of music that has just what you need</p>
+			</div>
+		</section>
+
+		<!-- Desc 3 -->
+
+		<section class="flx flx-jc-ce flx-ai-ce h-vh pos-rel" id="desc3">
+			<div class="flx flx-col w-50 h-100 flx-jc-ce fade-5">
+				<h4 class="nun-b txt-vio">SIT BACK AND LET OUR AI DO THE WORK FOR YOU</h4>
+				<h2 class="nun-b">Produce a high quality Audio-Track in 1 click</h2>
+				<p class="nun-xs m-t-2 txt-al-j w-80">Why bother tinkering with complicated audio-editing software when you can just let our AI automate this for you? All you need is a single click to merge all your voiceovers and music to get that polished, finalized content ready for broadcast.</p>
+			</div>
+			<div class="w-50 h-100 img-cont">
+				<img src="./components/img-3.png" class="none pos-abs image-r">
+			</div>
+		</section>
+
+		<!-- Desc 4 -->
+
+		<section class="flx flx-jc-ce flx-ai-ce h-vh pos-rel" id="desc4">
+			<div class="w-50 h-100 img-cont">
+				<img src="./components/img-4.png" class="none pos-abs image-bot">
+			</div>
+			<div class="flx flx-col w-50 h-100 flx-jc-ce fade-5">
+				<h4 class="nun-b txt-vio w-80">EFFORTLESSLY REPURPOSE YOUR AUDIO</h4>
+				<h2 class="nun-b">Convert your audio into a WaveVideo seamlessly</h2>
+				<p class="nun-xs m-t-2 txt-al-j w-80">Double your views and enagement with half the effort. Transform your audio into a fully-customizable WaveVideo that is fully optimized for your social media,business presentation, webiste use and more</p>
+			</div>
+		</section>
+
+	</main>
+</body>
+</html>

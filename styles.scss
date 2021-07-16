@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&family=Open+Sans&display=swap');
+@import "_var";
+@import "_def";
+@import "_structure";
+@import "_query";
+
+.nun{
+	&-xs{
+		font-family: $nun;
+		font-weight: 200;
+	}
+	&-s{
+		font-family: $nun;
+		font-weight: 300;
+	}
+	&-reg{
+		font-family: $nun;
+		font-weight: 400;
+	}
+	&-semi{
+		font-family: $nun;
+		font-weight: 600;
+	}
+	&-b{
+		font-family: $nun;
+		font-weight: 700;
+	}
+	&-xb{
+		font-family: $nun;
+		font-weight: 800;
+	}
+}
+
+.op{
+	font-family: $open;
+}
+
+.grad{
+	background-image:linear-gradient(to right,rgba(255,255,255,1)15%,rgba(214, 101, 203,1),rgba(209, 54, 194,1));
+	background-clip: text;
+	color: transparent;
+}
+
+.trck-head{
+	top: 5%;
+	padding: 5px;
+	font-size: 12px;
+	left: 5%;
+	border-radius: 5px;
+}
+
+
+.desc{
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+h1{
+font-size: clamp(2rem,4vw,5rem);
+}
+h2{
+	font-size: clamp(1.5rem,3vw,4rem);
+}
+h4{
+	font-size: clamp(1.2rem,1.5vw,2rem);	
+}
+p{
+	font-size: clamp(1rem,1vw,1.5rem);
+}
+
+.active{
+	&:after{
+		position: absolute;
+		content: "";
+		left: 50%;
+		transform: translateX(-50%);
+		width: 20%;
+		background-color:$vio;
+		height: 3px;
+		top: calc(100% + 5px);
+	}
+}
+
+li{
+	&:after{
+		position: absolute;
+		content: "";
+		left: 50%;
+		transform: translateX(-50%);
+		width: 0;
+		background-color:$vio;
+		height: 3px;
+		top: calc(100% + 5px);
+		transition:.5s ease-in-out;
+	}	
+	&:hover{
+		&:after{
+			width: 100%;
+		}
+	}
+}
