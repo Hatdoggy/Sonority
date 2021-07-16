@@ -490,6 +490,7 @@ section {
 
 .grad {
   background-image: linear-gradient(to right, white 15%, #d665cb, #d136c2);
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent; }
 
